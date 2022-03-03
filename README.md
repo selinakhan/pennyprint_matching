@@ -61,7 +61,6 @@ If `--all_imgs` is flagged, the results for all images and all panes are generat
 The results are stored in the specified `--data_out_dir`. For each image a seperate directory is made, for which each pane per image has its neighbours stored in a seperate directory. Example of how the storage works is shown below:
 
 ```
-```
 results
 └─── penny_print_image
 │   └───p0
@@ -77,7 +76,6 @@ results
 │       │   ...
 │       │   results_p1.jpeg
 │   ...
-```
 ```
 
 For a single pennyprint image, the results of the first two panes are generated. In each pane sub-folder the first $n$ similar images are stored, along with the `.txt` file mapping each similar image to its original image and pane number.
