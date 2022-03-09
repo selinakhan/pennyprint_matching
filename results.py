@@ -67,9 +67,6 @@ if __name__ == "__main__":
         image = input("Filename: ")
         pane_from = int(input("From pane: "))
         pane_to = int(input("To pane: "))
-        
-        # 1024px-Aanschouwt_hoe_ieder_hier_zijn_waren_weet_te_pryzen-Catchpenny_print-Borms_0834.jpeg
-        # 3
 
         visualise_results(args.im_in_dir, args.proc_im_dir, args.data_out_dir, mapping, similars, image, pane_from, pane_to)
 
