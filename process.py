@@ -1,24 +1,23 @@
-from ast import excepthandler
 import os
 import json
-from typing import Mapping
 import tqdm
 import torch
 import torchvision.transforms as T
 
-import cv2 as cv
-
 import clip
+import cv2 as cv
 import matplotlib.image as img
 import matplotlib.pyplot as plt
 import numpy as np
 import pickle 
 import argparse
 
+from ast import excepthandler
+from typing import Mapping
 from tqdm import trange, tqdm
 from PIL import Image, ImageOps, ImageFile
-ImageFile.LOAD_TRUNCATED_IMAGES = True
 from PIL import UnidentifiedImageError
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 from sklearn.metrics.pairwise import cosine_similarity
 
