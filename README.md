@@ -35,10 +35,12 @@ The code assumes some pre-defined files to work properly. Below is a suggested d
 The `--neighbours` argument specifies how many similar images should be calculated per image pane. This is sorted: meaning that _n=5_ will generate the top-5 similar images.
 
 The `--augmentation` argument specifies which data augmentation is used on the panes before they are processed. Different image augmentations bring out different features in an image. Choose from: 
-- binary: displays the image in strictly black and white colors. It highlights the complementing hues and shades in an image.  Example: ![alt text](https://imgur.com/a/8jwMJSl)
-- edge: displays the 'edges' in an image. It highlights the transitions between different colors in an image. Example: ![alt text](https://imgur.com/a/YLhPFQX)
-- gray: displays the image in grayscale. It simplifies the comparison between images by neglecting hue changes. Example: ![alt text](https://imgur.com/a/a4PJyfT)
+- gray: displays the image in grayscale. It simplifies the comparison between images by neglecting hue changes. 
+- edge: displays the 'edges' in an image. It highlights the transitions between different colors in an image. 
+- binary: displays the image in strictly black and white colors. It highlights the complementing hues and shades in an image.
 - None: No image augmentation is applied. 
+
+Visual examples can be seen ![here](https://github.com/selinakhan/pennyprint_matching/augmentations.png?raw=true). From top to bottom: gray, edge, binary.
 
 Default is *binary*, which in experiments showed best results. 
 
