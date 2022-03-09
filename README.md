@@ -6,7 +6,7 @@
 
 This repository includes the code needed to process and compare annotated penny prints. It includes two files:
 
-`process.py` - This file is used to process the annotated images and for each individual pane per image, generate it's $n$ nearest neighbours. 
+`process.py` - This file is used to process the annotated images and for each individual pane per image, generate it's _n_ nearest neighbours. 
 
 `results.py` - This file is used to generate a visual representation of the compared image panes.
 
@@ -32,7 +32,7 @@ The code assumes some pre-defined files to work properly. Below is a suggested d
 
 `python3 process.py --im_in_dir [path to original images] --im_out_dir [path to store processed images] --data_in_dir [path to the annotations file] --data_out_dir [path to store the extracted data] --neighbours [integer] --augmentation [augmentation type]`
 
-The `--neighbours` argument specifies how many similar images should be calculated per image pane. This is sorted: meaning that $n=5$ will generate the top-5 similar images.
+The `--neighbours` argument specifies how many similar images should be calculated per image pane. This is sorted: meaning that _n=5_ will generate the top-5 similar images.
 
 The `--augmentation` argument specifies which data augmentation is used on the panes before they are processed. Default is *binary*, which in experiments showed best results. 
 
@@ -78,6 +78,6 @@ results
 │   ...
 ```
 
-For a single pennyprint image, the results of the first two panes are generated. In each pane sub-folder the first $n$ similar images are stored, along with the `.txt` file mapping each similar image to its original image and pane number.
+For a single pennyprint image, the results of the first two panes are generated. In each pane sub-folder the first _n_ similar images are stored, along with the `.txt` file mapping each similar image to its original image and pane number.
 
  
