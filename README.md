@@ -41,6 +41,7 @@ The `--augmentation` argument specifies which data augmentation is used on the p
 - None: No image augmentation is applied. 
 
 Visual examples are dispayed below. ![here](https://github.com/selinakhan/pennyprint_matching/blob/main/augmentations.png) 
+
 From top to bottom: gray, edge, binary.
 
 Default is *binary*, which in experiments showed best results. 
