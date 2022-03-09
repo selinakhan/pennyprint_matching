@@ -1,10 +1,10 @@
-import json
 import os
+import json
+import argparse
 import numpy as np
 import matplotlib.pyplot as plt
 from collections import Counter
 from tqdm import tqdm
-import argparse
 from PIL import Image
 
 def visualise_results(im_dir, proc_im_dir, out_dir, mapping, similars, image, pane_from, pane_to):
@@ -58,10 +58,8 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-
     similars = json.load(open(args.similars))
     mapping = json.load(open(args.mapping))
-
 
     if not args.all_imgs:
         image = input("Filename: ")
